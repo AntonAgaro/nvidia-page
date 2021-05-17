@@ -1,0 +1,28 @@
+.header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__menu {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        
+    }
+    &__menu-item-link {
+        color: $font-color;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+    }
+    &__social-icon {
+        cursor: pointer;
+    }
+}

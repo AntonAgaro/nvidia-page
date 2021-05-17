@@ -1,6 +1,7 @@
 html,
 body {
 	height: 100%;
+	background-color: $back-color;
 }
 
 .wrapper {
@@ -17,7 +18,7 @@ body {
 }
 
 .container{
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
 }

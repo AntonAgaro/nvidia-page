@@ -13,7 +13,7 @@ function browsersync() {
     server: {
       baseDir: 'app/'
     }
-  })
+  });
 }
 
 //Сборка js через webpack
@@ -49,7 +49,7 @@ function buildJs() {
       }
   }))
   .pipe(dest('app/js'))
-  .pipe(browserSync.stream())
+  .pipe(browserSync.stream());
 }
 
 function buildProdJs() {
@@ -81,7 +81,7 @@ function buildProdJs() {
 }
 
 function cleanDist() {
-  return del('dist')
+  return del('dist');
 }
 
 function images() {
@@ -97,7 +97,7 @@ function images() {
           ]
       })
   ]))
-    .pipe(dest('dist/images'))
+    .pipe(dest('dist/images'));
 }
 
 //Скриптами занимается webpack
@@ -117,7 +117,7 @@ function styles() {
     .pipe(concat('style.min.css')) //Именуем
     .pipe(autoprefixer({grid: true}))
     .pipe(dest('app/css')) // выкидываем обработанный
-    .pipe(browserSync.stream())
+    .pipe(browserSync.stream());
 }
 
 function build() {
@@ -127,7 +127,7 @@ function build() {
     // 'app/js/main.min.js',
     'app/*.html'
   ], {base: 'app'})
-  .pipe(dest('dist'))
+  .pipe(dest('dist'));
 }
 
 function watching() {
