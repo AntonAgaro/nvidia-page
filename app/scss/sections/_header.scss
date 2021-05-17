@@ -3,11 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &__logo {
+        cursor: pointer;
+    }
     &__menu {
         display: flex;
         gap: 24px;
         align-items: center;
-        
     }
     &__menu-item-link {
         color: $font-color;
@@ -23,6 +25,10 @@
         align-items: center;
     }
     &__social-icon {
+        cursor: pointer;
+    }
+    &__burger {
+        display: none;
         cursor: pointer;
     }
 }

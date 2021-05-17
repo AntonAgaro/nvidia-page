@@ -1,0 +1,16 @@
+@media (max-width: 320px) {
+    .main {
+        padding-bottom: 62px;
+        &__title {
+            &-divider {
+                display: block;
+            }  
+        }
+        &__descr {
+            font-size: 15px;
+        }
+        &__wrapper-item {
+            width: 290px;
+        }
+    }
+}

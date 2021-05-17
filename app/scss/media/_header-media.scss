@@ -1,0 +1,18 @@
+@media (max-width: 586px) {
+    .header {
+        height: 56px;
+        &__menu-item {
+            display: none;
+        }
+        &__social {
+            display: none;
+        }
+        &__burger {
+            display: block;
+        }
+        &__logo {
+            width: 45px;
+            height: 34px;
+        }
+    }
+}
