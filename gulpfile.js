@@ -8,6 +8,15 @@ const imagemin = require('gulp-imagemin');
 const del = require('del');
 const webpack = require('webpack-stream');
 
+//Функция для теста отправки форм - копирует файлы в папку сервера
+function copyHtml() {
+  return src([
+    "./app/**/*.*",
+
+  ])
+  .pipe(dest('/Applications/MAMP/htdocs/nvidia'));
+}
+
 function browsersync() {
   browserSync.init({
     server: {
@@ -146,6 +155,7 @@ exports.images = images;
 exports.cleanDist = cleanDist;
 exports.buildJs = buildJs;
 exports.buildProdJs = buildProdJs;
+exports.copyHtml = copyHtml;
 
 
 exports.build = series(cleanDist, images, build, buildProdJs);

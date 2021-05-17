@@ -2,7 +2,7 @@
     height: auto;
     padding-top: 60px;
     padding-bottom: 125px;
-    background-image: url("../../images/main/bg.png");
+    background-image: url("../images/main/bg.png");
     background-size: cover;
     background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -67,18 +67,7 @@
         color: #E1E1E1;
     }
     &__btn {
-        display: block;  
-        margin: 50px auto 0 auto;
-        padding: 17.5px 60px;
-        background-color: $btn-color;
-        border: none;
-        cursor: pointer;
-        font-family: Play;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 21px;
-        letter-spacing: 0.25px;
-        color: $font-color;
+        @include button(50px);
         &:hover {
             background: $back-color;
             border: 2px solid #77B900;

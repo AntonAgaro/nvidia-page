@@ -67,4 +67,14 @@
             }
         }
     }
+    &__btn {
+        @include button(20px);
+        &:hover {
+            background: $back-color;
+            border: 2px solid #77B900;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 10px #77B900;
+        }
+    }
+    
 }
