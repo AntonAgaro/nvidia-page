@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nvidia-test-page</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <ul class="header__menu">
+        <img src="images/header/logo.svg" alt="logo" class="header__logo">
+        <li class="header__menu-item">
+          <a class="header__menu-item-link" href="#">Продукты</a>
+        </li>
+        <li class="header__menu-item"><a class="header__menu-item-link" href="#">Технологии</a></li>
+        <li class="header__menu-item"><a class="header__menu-item-link" href="#">Experience</a></li>
+      </ul>
+      <div class="header__social">
+        <img src="images/header/twitter.svg" alt="twitter" class="header__social-icon">
+        <img src="images/header/inst.svg" alt="inst" class="header__social-icon">
+      </div>
+      <svg class="header__burger" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect id="burger-back" width="56" height="56" fill="black"/>
+        <path d="M16 22H41" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <path d="M16 28H41" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <path d="M16 34H41" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </header>
+  </div>
+  <div class="slide">
+    <div class="slide__item">
+      <a href="#">Продукты</a>
+    </div>
+    <div class="slide__item">
+      <a href="#">Технологии</a>
+    </div>
+    <div class="slide__item">
+      <a href="#">Experience</a>
+    </div>
+    <div class="slide__social">
+      <img src="images/header/twitter.svg" alt="twitter" class="header__social-icon">
+      <img src="images/header/inst.svg" alt="inst" class="header__social-icon">
+    </div>
+  </div>
+
+  <section class="main">
+    <div class="container">
+      <h1 class="main__title">ПРЕИМУЩЕСТВА<br class="main__title-divider"> G-SYNC</h1>
+      <div class="main__descr">
+        Каждый монитор с технологией<br class="main__title-divider"> G-SYNC проходит серьезное тестирование и контроль качества<br class="main__title-divider"> для обеспечения максимальной производительности. Сотни мониторов проходят контроль качества, но только прошедшие все тесты получают сертификацию<br class="main__title-divider"> G-SYNC.
+      </div>
+      <div class="main__wrapper">
+        <div class="main__wrapper-item">
+          <img src="images/main/normal/1.svg" alt="1" class="main__wrapper-item-img">
+          <div class="main__wrapper-item-title">
+            <span class="main__span">HDR</span> DISPLAY 
+          </div>
+          <div class="main__wrapper-item-descr">
+            Получите более широкий и комфортный для восприятия диапазон цветовой гаммы, чем в обычных мониторах.
+          </div>
+        </div>
+        <div class="main__wrapper-item">
+          <img src="images/main/normal/2.svg" alt="2" class="main__wrapper-item-img">
+          <div class="main__wrapper-item-title"><span class="main__span">INPUT</span> LAG</div>
+          <div class="main__wrapper-item-descr">Мониторы с технологией G-SYNC обеспечивают минимальную задержку между нажатием клавиш и результатом на экране, что очень важно для геймеров.
+          </div>
+        </div>
+        <div class="main__wrapper-item">
+          <img src="images/main/normal/3.svg" alt="3" class="main__wrapper-item-img">
+          <div class="main__wrapper-item-title"><span class="main__span"> HIGH REFRESH</span> RATE</div>
+          <div class="main__wrapper-item-descr">
+            NVIDIA тесно сотрудничает с производителями мониторов, чтобы вывести на рынок широкий спектр дисплеев с высокой частотой обновления экрана от 75 до 360 Гц.
+          </div>
+        </div>
+        <div class="main__wrapper-item">
+          <img src="images/main/normal/4.svg" alt="4" class="main__wrapper-item-img">
+          <div class="main__wrapper-item-title">
+            <span class="main__span">WIDE COLOR</span> GAMUT
+          </div>
+          <div class="main__wrapper-item-descr">
+            Современные мониторы G-SYNC ULTIMATE поддерживают цветовой охват DCI-P3, обеспечивая более реалистичную цветопередачу с плавными переходами.
+          </div>
+        </div>
+      </div>
+      <button class="main__btn">КУПИТЬ</button>
+    </div>
+  </section>
+  <div class="overlay">
+    <div class="popup">
+      <svg class="popup__close" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 2L2 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <path d="M2 2L18 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      <form action="submit" class="popup__form">
+        <div class="popup__form-title">ПРЕИМУЩЕСТВА G-SYNC</div>
+        <input type="text" name="name" placeholder="Имя" class="popup__form-input">
+        <input type="email" name="email" placeholder="Mail" class="popup__form-input">
+        <button type="submit" class="popup__btn">КУПИТЬ</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
