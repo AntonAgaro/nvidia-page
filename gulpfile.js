@@ -12,7 +12,6 @@ const webpack = require('webpack-stream');
 function copyHtml() {
   return src([
     "./app/**/*.*",
-
   ])
   .pipe(dest('/Applications/MAMP/htdocs/nvidia'));
 }

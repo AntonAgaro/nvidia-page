@@ -13,8 +13,8 @@ export default class Modal {
         document.body.style.marginRight = `${this.scroll}px`;
     }
 
-    closeModal() {
-        this.modal.style.display = 'none';
+    closeModal(popup) {
+        popup.style.display = 'none';
         document.body.style.overflow = '';
         document.body.style.marginRight = '0';
     }
@@ -39,12 +39,12 @@ export default class Modal {
         });
 
         this.closeBtn.addEventListener('click', () => {
-            this.closeModal();
+            this.closeModal(this.modal);
         });
 
         this.modal.addEventListener('click', (e) => {
             if (e.target.classList.contains('overlay')) {
-                this.closeModal(); 
+                this.closeModal(this.modal); 
             }
 
         });

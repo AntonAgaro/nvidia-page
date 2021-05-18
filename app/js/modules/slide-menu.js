@@ -6,6 +6,7 @@ export default class SlideMenu {
     }
 
     showMenu() {
+        this.menu.onselectstart = () => false;
         this.menu.classList.toggle('flex');
     }
 
